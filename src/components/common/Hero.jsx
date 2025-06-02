@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         <br />
         <div className="flex gap-3 justify-start items-center">
-          <button class="hover:bg-gray-100 text-gray-800 py-2 px-4 border border-gray-400 rounded shadow">
+          <button class="hover:bg-gray-100 hover:text-black py-2 px-4 border border-gray-400 rounded shadow">
             Resume <FaFileDownload className="inline"></FaFileDownload>
           </button>
           <button><FaLinkedinIn size="25px"></FaLinkedinIn></button>
