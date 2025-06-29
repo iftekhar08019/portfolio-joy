@@ -3,7 +3,7 @@ import Hero from '../components/common/Hero';
 
 const Home = () => {
     return (
-        <div>
+        <div className='container mx-auto px-4'>
             <Hero></Hero>
         </div>
     );
