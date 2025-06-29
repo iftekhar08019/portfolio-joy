@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
 @plugin "daisyui";
 
@@ -48,11 +48,11 @@ body {
   top: 0;
   left: 0;
 
-  height: 6px;    /* thicker */
+  height: 6px; /* thicker */
   width: 0;
 
   /* neutral-400 → neutral-600 */
-  background: linear-gradient(to right, #9CA3AF, #4B5563);
+  background: linear-gradient(to right, #9ca3af, #4b5563);
 
   /* rounded-2xl on top corners */
   border-top-left-radius: 16px;
@@ -68,10 +68,10 @@ body {
   top: 0;
   right: 0;
 
-  width: 6px;    /* thicker */
+  width: 6px; /* thicker */
   height: 0;
 
-  background: linear-gradient(to bottom, #9CA3AF, #4B5563);
+  background: linear-gradient(to bottom, #9ca3af, #4b5563);
 
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -85,10 +85,10 @@ body {
   bottom: 0;
   right: 0;
 
-  height: 6px;    /* thicker */
+  height: 6px; /* thicker */
   width: 0;
 
-  background: linear-gradient(to left, #9CA3AF, #4B5563);
+  background: linear-gradient(to left, #9ca3af, #4b5563);
 
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -102,10 +102,10 @@ body {
   bottom: 0;
   left: 0;
 
-  width: 6px;    /* thicker */
+  width: 6px; /* thicker */
   height: 0;
 
-  background: linear-gradient(to top, #9CA3AF, #4B5563);
+  background: linear-gradient(to top, #9ca3af, #4b5563);
 
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
@@ -115,30 +115,38 @@ body {
 
 /* 6) Keyframes */
 @keyframes draw-top {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 @keyframes draw-right {
-  to { height: 100%; }
+  to {
+    height: 100%;
+  }
 }
 @keyframes draw-bottom {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 @keyframes draw-left {
-  to { height: 100%; }
+  to {
+    height: 100%;
+  }
 }
 
 /* 7) Animate on hover in sequence */
 .hover-trigger:hover .border-overlay::before {
-  animation: draw-top    0.4s ease-in-out forwards;
+  animation: draw-top 0.4s ease-in-out forwards;
 }
 .hover-trigger:hover .border-overlay::after {
-  animation: draw-right  0.4s ease-in-out 0.4s forwards;
+  animation: draw-right 0.4s ease-in-out 0.4s forwards;
 }
 .hover-trigger:hover .border-overlay .bottom-bar {
   animation: draw-bottom 0.4s ease-in-out 0.8s forwards;
 }
 .hover-trigger:hover .border-overlay .left-bar {
-  animation: draw-left   0.4s ease-in-out 1.2s forwards;
+  animation: draw-left 0.4s ease-in-out 1.2s forwards;
 }
 
 /* 8) Reset immediately on mouse-leave */
@@ -161,4 +169,18 @@ body {
 .hover-trigger:hover h1 {
   opacity: 1;
   transform: scale(1);
+}
+
+.active {
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 5px 0px;
+  padding: 5px 15px;
+}
+
+.middle-border {
+  border-left: #4b5563 1px solid;
+  position: relative;
+  right: 50px;
 }
