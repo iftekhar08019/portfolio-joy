@@ -11,7 +11,7 @@ Welcome to my personal portfolio website! This project showcases my work, skills
 - **Tailwind CSS** – Utility-first CSS framework for styling
 - **EmailJS** – Send emails directly from frontend
 - **React Icons** – Icon library for React
-- **React Router DOM** – For client-side routing
+- **React Router** – For client-side routing
 
 ## 🚀 Features
 
@@ -78,4 +78,4 @@ iftehar_portfolio/
 
 ## 📬 Contact
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/iftekharul-alam) or reach out via the contact form on the website.
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/mdiftekharulalam21/) or reach out via the contact form on the website.
