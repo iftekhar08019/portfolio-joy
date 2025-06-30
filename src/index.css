@@ -175,12 +175,5 @@ body {
   border-radius: 5px;
   background-color: black;
   color: white;
-  margin: 5px 0px;
-  padding: 5px 15px;
-}
-
-.middle-border {
-  border-left: #4b5563 1px solid;
-  position: relative;
-  right: 50px;
+  padding: 5px 10px;
 }

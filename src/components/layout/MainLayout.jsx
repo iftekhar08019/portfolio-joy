@@ -8,7 +8,6 @@ const MainLayout = () => {
     return (
         <div className='w-full lg:w-1/2 mx-auto'>
             <Navbar></Navbar>
-            <Home></Home>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>

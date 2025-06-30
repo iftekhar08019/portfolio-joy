@@ -38,21 +38,21 @@ const Hero = () => {
           <a
             href="https://www.linkedin.com/in/mdiftekharulalam21/"
             target="_blank"
-            className="cursor-pointer "
+            className="cursor-pointer hover:text-gray-400"
           >
             <FaLinkedinIn size="25px"></FaLinkedinIn>
           </a>
           <a
             href="https://github.com/iftekhar08019"
             target="_blank"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-gray-400"
           >
             <FaGithub size="25px"></FaGithub>
           </a>
           <a
             href="mailto:iftekhar08019@gmail.com"
             target="_blank"
-            className="cursor-pointer"
+            className="cursor-pointer hover:text-gray-400"
           >
             <FaEnvelope size="25px"></FaEnvelope>
           </a>
