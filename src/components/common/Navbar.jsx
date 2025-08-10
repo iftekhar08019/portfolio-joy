@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 lg:gap-0">
         {/* Menu Container - Left side on desktop, centered on mobile */}
         <nav aria-label="Primary" className="flex justify-center lg:justify-start">
-          <div className="flex items-center gap-4 lg:gap-8 rounded-full px-3 lg:px-6 py-2 lg:py-3">
+          <div className="flex items-center gap-4 lg:gap-8 rounded-full px-3 py-2 lg:py-3">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}

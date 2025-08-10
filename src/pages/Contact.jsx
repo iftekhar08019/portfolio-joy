@@ -45,20 +45,20 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form-container p-4 bg-dark-gray text-white rounded-md">
+    <div className="my-8">
       <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">
-        My Interests
+        Contact Me
       </h1>
-      <form onSubmit={handleSubmit} className="my-8">
+      <form onSubmit={handleSubmit} className="mt-6 lg:mt-8">
         <div className="mb-4">
-          <label htmlFor="name" className="block text-lg">
+          <label htmlFor="name" className="block text-lg text-gray-300">
             Your Name
           </label>
           <input
             type="text"
             id="name"
             name="name"
-            className="w-full p-2 rounded-md bg-gray-700 text-white"
+            className="w-full p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
             value={formData.name}
             onChange={handleChange}
             required
@@ -66,14 +66,14 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="email" className="block text-lg">
+          <label htmlFor="email" className="block text-lg text-gray-300">
             Your Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="w-full p-2 rounded-md bg-gray-700 text-white"
+            className="w-full p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
             value={formData.email}
             onChange={handleChange}
             required
@@ -81,13 +81,13 @@ const ContactForm = () => {
         </div>
 
         <div className="mb-4">
-          <label htmlFor="message" className="block text-lg">
+          <label htmlFor="message" className="block text-lg text-gray-300">
             Your Message
           </label>
           <textarea
             id="message"
             name="message"
-            className="w-full p-2 rounded-md bg-gray-700 text-white"
+            className="w-full p-2 rounded-md bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
             rows="4"
             value={formData.message}
             onChange={handleChange}
