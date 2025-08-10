@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="lg:flex lg:flex-row flex-col gap-6 lg:gap-10 justify-center items-center">
-      <div className="relative lg:w-1/4 w-1/2 mx-auto lg:mx-0 hover-trigger overflow-hidden my-5">
+      <div className="relative lg:w-1/3 w-1/2 mx-auto lg:mx-0 hover-trigger overflow-hidden my-5">
         <img src={bannerImg} alt="" className="rounded-2xl block w-full" />
         <div className="border-overlay absolute inset-0 pointer-events-none rounded-2xl">
           <div className="bottom-bar"></div>
@@ -23,7 +23,7 @@ const Hero = () => {
         <p className="font-medium text-sm lg:text-base">MERN Stack Developer based in Germany🇩🇪</p>
         <br />
         <p className="font-medium text-sm lg:text-base">
-          Medical engineering taught me precision. Full-stack web dev <br className="hidden lg:block" />
+          Medical engineering taught me precision. Full-stack web dev
           lets me apply it.
         </p>
         <br />
