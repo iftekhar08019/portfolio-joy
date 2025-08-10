@@ -5,19 +5,19 @@ const ExperienceTabs = () => {
 
   return (
     <div>
-      <div className="flex justify-around lg:gap-15 bg-gray-700 text-gray-400 rounded-md p-1 mt-8">
+      <div className="flex justify-around lg:gap-15 bg-gray-700 text-gray-400 rounded-md p-1 mt-6 lg:mt-8">
         <button
-          className={`rounded-md px-10 lg:px-30 ${
-            activeTab === "work" ? "bg-gray-900 text-white font-bold px-10 lg:px-30" : ""
+          className={`rounded-md px-6 lg:px-10 py-2 lg:py-0 text-sm lg:text-base ${
+            activeTab === "work" ? "bg-gray-900 text-white font-bold" : ""
           }`}
           onClick={() => setActiveTab("work")}
         >
           Experience
         </button>
         <button
-          className={`p-2 rounded-md px-10 lg:px-30 ${
+          className={`rounded-md px-6 lg:px-10 py-2 lg:py-0 text-sm lg:text-base ${
             activeTab === "education"
-              ? "bg-gray-900 text-white font-bold px-10 lg:px-30"
+              ? "bg-gray-900 text-white font-bold"
               : ""
           }`}
           onClick={() => setActiveTab("education")}
@@ -26,10 +26,10 @@ const ExperienceTabs = () => {
         </button>
       </div>
 
-      <div className="mt-4 border-1 border-gray-700 p-5 rounded-md">
+      <div className="mt-4 border-1 border-gray-700 p-3 lg:p-5 rounded-md">
         {activeTab === "work" ? (
-          <div className="flex items-start gap-5 ">
-            <div className="bg-gray-700 p-1 rounded-md w-10 h-10 flex-shrink-0">
+          <div className="flex items-start gap-3 lg:gap-5">
+            <div className="bg-gray-700 p-1 rounded-md w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
               <img
                 src={DuoneosLogo}
                 className="w-full h-full object-cover rounded-md"
@@ -37,12 +37,12 @@ const ExperienceTabs = () => {
               />
             </div>
             <div>
-              <div className="text-sm text-gray-400">
+              <div className="text-xs lg:text-sm text-gray-400">
                 <p>May 2021 - October 2021 </p>
-                <h2 className="text-base font-bold text-white">Duoneos</h2>
+                <h2 className="text-sm lg:text-base font-bold text-white">Duoneos</h2>
                 <p>Frontend Developer Intern</p>
               </div>
-              <ul className="list-disc pl-3 mt-3 space-y-2 text-sm text-gray-100">
+              <ul className="list-disc pl-3 mt-2 lg:mt-3 space-y-1 lg:space-y-2 text-xs lg:text-sm text-gray-100">
                 <li>Developed user-friendly web applications using React</li>
                 <li>
                   Collaborated with designers to implement responsive UI/UX
@@ -55,9 +55,9 @@ const ExperienceTabs = () => {
             </div>
           </div>
         ) : (
-          <div className="space-y-10">
-            <div className="flex items-start gap-5 ">
-              <div className="bg-gray-700 p-1 rounded-md w-10 h-10 flex-shrink-0">
+          <div className="space-y-6 lg:space-y-10">
+            <div className="flex items-start gap-3 lg:gap-5">
+              <div className="bg-gray-700 p-1 rounded-md w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
                 <img
                   src={
                     "https://www.designtagebuch.de/wp-content/uploads/mediathek//2021/11/friedrich-alexander-universitaet-fau-logo-b.jpg"
@@ -67,14 +67,14 @@ const ExperienceTabs = () => {
                 />
               </div>
               <div>
-                <div className="text-sm text-gray-400">
+                <div className="text-xs lg:text-sm text-gray-400">
                   <p>April 2021 - April 2025 </p>
-                  <h2 className="text-base font-bold text-white">
+                  <h2 className="text-sm lg:text-base font-bold text-white">
                     Friedrich-Alexander-Universität Erlangen-Nürnberg
                   </h2>
                   <p>Master of Science (M.Sc.) in Medical Engineering</p>
                 </div>
-                <ul className="list-disc pl-3 mt-3 text-sm space-y-2 text-gray-100">
+                <ul className="list-disc pl-3 mt-2 lg:mt-3 text-xs lg:text-sm space-y-1 lg:space-y-2 text-gray-100">
                   <li>
                     Graduated with a strong academic record, focusing on medical
                     game development and real-time server integration
@@ -92,8 +92,8 @@ const ExperienceTabs = () => {
                 </ul>
               </div>
             </div>
-                        <div className="flex items-start gap-5 ">
-              <div className="bg-gray-700 p-1 rounded-md w-10 h-10 flex-shrink-0">
+            <div className="flex items-start gap-3 lg:gap-5">
+              <div className="bg-gray-700 p-1 rounded-md w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
                 <img
                   src={
                     "https://scientificbangladesh.com/wp-content/uploads/2020/01/80c01bbf9c917e68c33473270e635ffe.jpeg"
@@ -103,14 +103,14 @@ const ExperienceTabs = () => {
                 />
               </div>
               <div>
-                <div className="text-sm text-gray-400">
+                <div className="text-xs lg:text-sm text-gray-400">
                   <p>January 2015 - April 2019 </p>
-                  <h2 className="text-base font-bold text-white">
+                  <h2 className="text-sm lg:text-base font-bold text-white">
                     University of Chittagong
                   </h2>
                   <p>Bachelor of Science (B.Sc.) in Electrical and Electronic Engineering</p>
                 </div>
-                <ul className="list-disc pl-3 mt-3 text-sm space-y-2 text-gray-100">
+                <ul className="list-disc pl-3 mt-2 lg:mt-3 text-xs lg:text-sm space-y-1 lg:space-y-2 text-gray-100">
                   <li>
                     Built a solid foundation in electronics, signal processing, and embedded systems through core engineering courses
                   </li>

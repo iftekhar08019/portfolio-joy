@@ -7,7 +7,7 @@ import Skill from '../components/common/Skill';
 
 const Home = () => {
     return (
-        <div className='container mx-auto px-4'>
+        <div className='container mx-auto px-0 lg:px-4'>
             <Hero></Hero>
             <WorkEdu></WorkEdu>
             <Skill></Skill>
