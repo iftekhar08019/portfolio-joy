@@ -6,7 +6,7 @@ import logo from "../../assets/iftekhar_logo.png";
 const navItems = [
   { to: "/", label: "Home", Icon: FiHome },
   { to: "/projects", label: "Projects", Icon: FiFolder },
-  { to: "/interest", label: "Interest", Icon: FiBookOpen },
+  { to: "/blogs", label: "Blogs", Icon: FiBookOpen },
   { to: "/contact", label: "Contact", Icon: FiMail },
 ];
 

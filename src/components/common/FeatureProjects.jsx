@@ -3,6 +3,8 @@ import ProjectsCard from "../ui/ProjectsCard";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router";
 import useAxios from "../../hooks/useAxios";
+import Lottie from "lottie-react";
+import loadingAnimation from "../../assets/Loading Animation.json";
 
 const FeatureProjects = () => {
   const [projects, setProjects] = useState([]);
@@ -38,8 +40,11 @@ const FeatureProjects = () => {
             <FaArrowRight />
           </Link>
         </div>
-        <div className="mt-6 lg:mt-8 text-center">
-          <p className="text-gray-400">Loading projects...</p>
+        <div className="mt-6 lg:mt-8 flex flex-col items-center justify-center">
+          <div className="w-32 h-32 lg:w-40 lg:h-40">
+            <Lottie animationData={loadingAnimation} loop={true} />
+          </div>
+          <p className="text-gray-400 mt-4 text-center">Loading projects...</p>
         </div>
       </div>
     );
