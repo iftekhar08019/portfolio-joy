@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 lg:gap-0">
         {/* Menu Container - Left side on desktop, centered on mobile */}
         <nav aria-label="Primary" className="flex justify-center lg:justify-start">
-          <div className="flex items-center gap-4 lg:gap-8 rounded-full px-3 py-2 lg:py-3">
+          <div className="flex items-center gap-4 lg:gap-8 rounded-full px-4 py-3 lg:px-3 lg:py-3">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -32,8 +32,8 @@ const Navbar = () => {
               >
                 {({ isActive }) => (
                   <span className="relative inline-flex flex-col items-center justify-center">
-                    <item.Icon className="text-[20px] lg:text-[26px] mb-1" />
-                    <span className="text-[10px] lg:text-xs font-medium">{item.label}</span>
+                    <item.Icon className="text-[28px] lg:text-[26px] mb-2 lg:mb-1" />
+                    <span className="text-[12px] lg:text-xs font-medium">{item.label}</span>
                     {isActive && (
                       <span className="absolute -bottom-1 lg:-bottom-2 left-1/2 transform -translate-x-1/2 w-full h-0.5 bg-white rounded-full" />
                     )}
