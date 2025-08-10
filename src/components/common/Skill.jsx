@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
-import { SiMongodb, SiFirebase } from "react-icons/si";
+import { SiMongodb, SiFirebase, SiExpress } from "react-icons/si";
 
 const Skill = () => {
   return (
@@ -32,6 +32,10 @@ const Skill = () => {
         <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
           <FaNodeJs className="text-3xl lg:text-4xl text-green-700 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
           <span className="text-sm lg:text-base">Node.js</span>
+        </h1>
+        <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
+          <SiExpress className="text-3xl lg:text-4xl text-gray-600 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
+          <span className="text-sm lg:text-base">Express.js</span>
         </h1>
         <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
           <SiFirebase className="text-3xl lg:text-4xl text-yellow-600 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />

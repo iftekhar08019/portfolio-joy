@@ -12,11 +12,11 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 bg-[#1d232a] pt-4 lg:pt-6 pb-3 lg:pb-5 px-3 lg:px-5">
+    <div className="sticky top-0 z-50 pt-4 lg:pt-6 pb-3 lg:pb-5 px-3 lg:px-5">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 lg:gap-0">
         {/* Menu Container - Left side on desktop, centered on mobile */}
         <nav aria-label="Primary" className="flex justify-center lg:justify-start">
-          <div className="flex items-center gap-4 lg:gap-8 rounded-full px-4 py-3 lg:px-3 lg:py-3">
+          <div className="flex items-center gap-4 lg:gap-8 px-10 py-3 lg:px-10 lg:py-3 backdrop-blur-sm bg-white/5 border border-white/10 hover:border-white/20 transition-all duration-300 rounded-full lg:backdrop-blur-none lg:bg-transparent lg:border-none lg:hover:border-none">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
@@ -45,8 +45,8 @@ const Navbar = () => {
         </nav>
         
         {/* Logo - Only visible on desktop, right side */}
-        <div className="hidden lg:block w-12 h-12">
-          <a href="/">
+        <div className="hidden lg:block w-16 h-16">
+          <a href="/" className="block backdrop-blur-sm bg-white/5 border border-white/10 rounded-xl p-3 hover:border-white/20 transition-all duration-300">
             <img src={logo} alt="Logo" className="object-contain" />
           </a>
         </div>

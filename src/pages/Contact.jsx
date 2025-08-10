@@ -101,7 +101,7 @@ const ContactForm = () => {
               href={option.link}
               target={option.title !== "Email" ? "_blank" : "_self"}
               rel={option.title !== "Email" ? "noopener noreferrer" : ""}
-              className={`${option.bgColor} border border-gray-600 rounded-lg p-4 lg:p-6 transition-all duration-300 hover:scale-105 group`}
+              className="backdrop-blur-lg bg-white/3 border border-white/10 rounded-2xl p-4 lg:p-6 transition-all duration-500 hover:border-white/20 hover:shadow-2xl hover:shadow-white/10 hover:scale-[1.02] group"
             >
               <div className="flex items-center gap-4">
                 <div className={`${option.color} text-2xl lg:text-3xl`}>
@@ -123,69 +123,74 @@ const ContactForm = () => {
           Send Me a Message
         </h2>
         <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div>
-                <label htmlFor="name" className="block text-lg text-gray-300 mb-2">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
+          <div className="backdrop-blur-lg bg-white/3 border border-white/10 rounded-2xl p-6 lg:p-8 hover:border-white/20 transition-all duration-500 hover:shadow-2xl hover:shadow-white/10">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-lg text-gray-300 mb-2">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full p-3 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                    placeholder="Enter your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-lg text-gray-300 mb-2">
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full p-3 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-lg text-gray-300 mb-2">
-                  Your Email
+                <label htmlFor="message" className="block text-lg text-gray-300 mb-2">
+                  Your Message
                 </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all"
-                  value={formData.email}
+                <textarea
+                  id="message"
+                  name="message"
+                  className="w-full p-3 rounded-xl backdrop-blur-sm bg-white/5 border border-white/10 text-white placeholder-gray-400 focus:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all duration-300 resize-none"
+                  placeholder="Type your message here..."
+                  rows="5"
+                  value={formData.message}
                   onChange={handleChange}
                   required
-                />
+                ></textarea>
               </div>
-            </div>
 
-            <div>
-              <label htmlFor="message" className="block text-lg text-gray-300 mb-2">
-                Your Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className="w-full p-3 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 transition-all resize-none"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
+              <button
+                type="submit"
+                className="w-full backdrop-blur-lg bg-white/5 border border-white/20 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:bg-white/10 hover:border-white/30 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white/20 group"
+              >
+                <span className="group-hover:text-blue-200 transition-colors duration-300">Send Message</span>
+              </button>
+            </form>
 
-            <button
-              type="submit"
-              className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500/20"
-            >
-              Send Message
-            </button>
-          </form>
-
-          {isSubmitted && (
-            <div className="mt-6 p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-center">
-              <p className="text-green-400 font-medium">
-                ✅ Your message has been submitted successfully! I'll get back to you soon.
-              </p>
-            </div>
-          )}
+            {isSubmitted && (
+              <div className="mt-6 p-4 backdrop-blur-sm bg-green-500/10 border border-green-500/20 rounded-xl text-center">
+                <p className="text-green-400 font-medium">
+                  ✅ Your message has been submitted successfully! I'll get back to you soon.
+                </p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
