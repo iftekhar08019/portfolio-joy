@@ -3,7 +3,7 @@ import React from "react";
 const Interest = () => {
   return (
     <div className="my-8">
-      <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">
+      <h1 className="lg:text-4xl text-2xl font-semibold hero-heading text-center">
         My Interests
       </h1>
       <div className="mt-6 lg:mt-8">
