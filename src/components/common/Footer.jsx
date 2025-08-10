@@ -1,13 +1,19 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import logo from '../../assets/iftekhar_logo.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
         <div>
             <footer className="flex justify-between items-center py-12 pb-5 px-5 sticky top-0 z-50 bg-[#1d232a]">
-                <div className="text-xs lg:text-base">
-                    <p>&copy; {currentYear} Md Iftekharul Alam</p>
+                <div className="flex items-center gap-4">
+                    <div className="w-8 h-8 lg:w-10 lg:h-10">
+                        <img src={logo} alt="Logo" className="object-contain" />
+                    </div>
+                    <div className="text-xs lg:text-base">
+                        <p>&copy; {currentYear}</p>
+                    </div>
                 </div>
                 <div className="flex space-x-4">
           <a
