@@ -17,7 +17,16 @@ const FeatureProjects = () => {
       try {
         setLoading(true);
         const response = await axios.get('/projects');
-        setProjects(response.data);
+        // Sort projects by date to get the latest ones first
+        const sortedProjects = response.data.sort((a, b) => {
+          // If projects have a date field, sort by it (newest first)
+          if (a.date && b.date) {
+            return new Date(b.date) - new Date(a.date);
+          }
+          // If no date field, keep original order (assuming API returns in chronological order)
+          return 0;
+        });
+        setProjects(sortedProjects);
         setError(null);
       } catch (err) {
         console.error('Failed to fetch projects:', err);
@@ -34,7 +43,7 @@ const FeatureProjects = () => {
     return (
       <div className="mt-6 lg:mt-8">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-0">
-          <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Feature Projects</h1>
+          <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Latest Projects</h1>
           <Link to="/projects" className="flex items-center gap-2 hover:text-gray-300 text-sm lg:text-base">
             <span>View All</span>
             <FaArrowRight />
@@ -44,7 +53,7 @@ const FeatureProjects = () => {
           <div className="w-32 h-32 lg:w-40 lg:h-40">
             <Lottie animationData={loadingAnimation} loop={true} />
           </div>
-          <p className="text-gray-400 mt-4 text-center">Loading projects...</p>
+          <p className="text-gray-400 mt-4 text-center">Loading latest projects...</p>
         </div>
       </div>
     );
@@ -54,7 +63,7 @@ const FeatureProjects = () => {
     return (
       <div className="mt-6 lg:mt-8">
         <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-0">
-          <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Feature Projects</h1>
+          <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Latest Projects</h1>
           <Link to="/projects" className="flex items-center gap-2 hover:text-gray-300 text-sm lg:text-base">
             <span>View All</span>
             <FaArrowRight />
@@ -70,7 +79,7 @@ const FeatureProjects = () => {
   return (
     <div className="mt-6 lg:mt-8">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-3 lg:gap-0">
-        <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Feature Projects</h1>
+        <h1 className="lg:text-4xl text-2xl font-semibold hero-heading">Latest Projects</h1>
         <Link to="/projects" className="flex items-center gap-2 hover:text-gray-300 text-sm lg:text-base">
           <span>View All</span>
           <FaArrowRight />
