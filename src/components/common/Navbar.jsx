@@ -12,7 +12,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="sticky top-0 z-50 pt-4 lg:pt-6 pb-3 lg:pb-5 px-3 lg:px-5">
+    <div className="sticky top-0 z-50 bg-[#1d232a] pt-4 lg:pt-6 pb-3 lg:pb-5 px-3 lg:px-5">
       <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 lg:gap-0">
         {/* Menu Container - Left side on desktop, centered on mobile */}
         <nav aria-label="Primary" className="flex justify-center lg:justify-start">
