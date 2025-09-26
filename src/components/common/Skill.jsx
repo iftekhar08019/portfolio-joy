@@ -1,6 +1,6 @@
 import React from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaNodeJs } from "react-icons/fa";
-import { SiMongodb, SiFirebase, SiExpress } from "react-icons/si";
+import { SiMongodb, SiFirebase, SiExpress, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 const Skill = () => {
   return (
@@ -22,8 +22,16 @@ const Skill = () => {
           <span className="text-sm lg:text-base">JavaScript</span>
         </h1>
         <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
+          <SiTypescript className="text-3xl lg:text-4xl text-blue-600 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
+          <span className="text-sm lg:text-base">TypeScript</span>
+        </h1>
+        <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
           <FaReact className="text-3xl lg:text-4xl text-blue-500 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
           <span className="text-sm lg:text-base">React</span>
+        </h1>
+        <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
+          <SiNextdotjs className="text-3xl lg:text-4xl text-black mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
+          <span className="text-sm lg:text-base">Next.js</span>
         </h1>
         <h1 className="flex flex-col items-center rounded-md transition-transform duration-300 hover:scale-110">
           <SiMongodb className="text-3xl lg:text-4xl text-green-600 mb-2 lg:mb-4 transition-transform duration-300 hover:scale-150" />
