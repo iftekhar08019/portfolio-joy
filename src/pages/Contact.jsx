@@ -65,8 +65,8 @@ const ContactForm = () => {
     {
       icon: FaLinkedinIn,
       title: "LinkedIn",
-      value: "linkedin.com/in/iftekhar08019",
-      link: "https://linkedin.com/in/iftekhar08019",
+      value: "linkedin.com/in/mdiftekharulalam21",
+      link: "https://www.linkedin.com/in/mdiftekharulalam21/",
       color: "text-blue-400 hover:text-blue-300",
       bgColor: "bg-blue-500/10 hover:bg-blue-500/20"
     },
