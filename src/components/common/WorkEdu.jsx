@@ -40,6 +40,33 @@ const ExperienceTabs = () => {
                 <div className="relative z-10">
                   <div className="bg-gray-700 p-1 rounded-md w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
                     <img
+                      src="https://www.designtagebuch.de/wp-content/uploads/mediathek//2021/11/friedrich-alexander-universitaet-fau-logo-b.jpg"
+                      className="w-full h-full object-cover rounded-md"
+                      alt="FAU Logo"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs lg:text-sm text-gray-400">
+                    <p>September 2023 - March 2024</p>
+                    <h2 className="text-sm lg:text-base font-bold text-white">HEX Lab, FAU Erlangen-Nürnberg</h2>
+                    <p>Masters Thesis Student</p>
+                    <p>Erlangen, Bavaria, Germany</p>
+                  </div>
+                  <ul className="list-disc pl-3 mt-2 lg:mt-3 space-y-1 lg:space-y-2 text-xs lg:text-sm text-gray-100">
+                    <li>Designed VR-based rehabilitation system for lower limb injuries with real-time muscle force and joint angle recommendations</li>
+                    <li>Developed interactive virtual environment using C# in Unity to enhance user engagement and therapy immersion</li>
+                    <li>Integrated biomechanical simulation through OpenSim using C++ enabling accurate analysis of musculoskeletal dynamics</li>
+                    <li>Implemented Node.js server with JavaScript and WebSocket for real-time communication between Unity and OpenSim</li>
+                    <li>Ensured responsive data exchange and synchronization for smooth real-time feedback during rehabilitation sessions</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-3 lg:gap-5">
+                <div className="relative z-10">
+                  <div className="bg-gray-700 p-1 rounded-md w-8 h-8 lg:w-10 lg:h-10 flex-shrink-0">
+                    <img
                       src={InterherenceLogo}
                       className="w-full h-full object-cover rounded-md"
                       alt="Interherence Logo"
