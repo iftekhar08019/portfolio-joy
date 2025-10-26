@@ -54,11 +54,9 @@ const ExperienceTabs = () => {
                     <p>Erlangen, Bavaria, Germany</p>
                   </div>
                   <ul className="list-disc pl-3 mt-2 lg:mt-3 space-y-1 lg:space-y-2 text-xs lg:text-sm text-gray-100">
-                    <li>Designed VR-based rehabilitation system for lower limb injuries with real-time muscle force and joint angle recommendations</li>
-                    <li>Developed interactive virtual environment using C# in Unity to enhance user engagement and therapy immersion</li>
-                    <li>Integrated biomechanical simulation through OpenSim using C++ enabling accurate analysis of musculoskeletal dynamics</li>
-                    <li>Implemented Node.js server with JavaScript and WebSocket for real-time communication between Unity and OpenSim</li>
-                    <li>Ensured responsive data exchange and synchronization for smooth real-time feedback during rehabilitation sessions</li>
+                    <li>Designed and developed VR-based rehabilitation system for lower limb injuries using Unity C# with real-time muscle force and joint angle recommendations</li>
+                    <li>Integrated OpenSim biomechanical simulation using C++ to enable accurate analysis of musculoskeletal dynamics in the rehabilitation environment</li>
+                    <li>Implemented Node.js WebSocket server for real-time communication between Unity and OpenSim ensuring synchronized data exchange during rehabilitation sessions</li>
                   </ul>
                 </div>
               </div>
