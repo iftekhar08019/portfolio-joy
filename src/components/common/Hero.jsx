@@ -29,7 +29,7 @@ const Hero = () => {
         <br />
         <div className="flex flex-col lg:flex-row gap-3 justify-center lg:justify-start items-center">
           <a
-            href="https://drive.google.com/file/d/1TG4lkvM4T0RLMI2Dw-ex1lr4L00y49o2/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1RvWArXv54-50rNCGLQuJDCVVSCYKwtnp/view?usp=sharing"
             target="_blank"
             className="hover:bg-gray-100 hover:text-black py-2 px-4 border border-gray-400 rounded shadow cursor-pointer text-sm lg:text-base"
           >
