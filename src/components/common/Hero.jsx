@@ -1,5 +1,5 @@
 import React from "react";
-import bannerImg from "../../assets/joy.jpg";
+import bannerImg from "../../assets/joy.png";
 import { FaEnvelope, FaFileDownload } from "react-icons/fa";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 
